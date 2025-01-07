@@ -5802,3 +5802,7 @@ select {
         min-height: 0px;
     }
 }
+.hover-yellow:hover{
+
+    color: var(--root-color) !important;
+}
