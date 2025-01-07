@@ -5803,6 +5803,5 @@ select {
     }
 }
 .hover-yellow:hover{
-
     color: var(--root-color) !important;
 }
