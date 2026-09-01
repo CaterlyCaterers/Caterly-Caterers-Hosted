@@ -1,207 +1,124 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title id="page-title">Site Error</title>
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      background-color: #202124;
-      color: #e8eaed;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      padding: 20px;
-    }
-
-    .container {
-      max-width: 560px;
-      width: 100%;
-    }
-
-    .sad-tab-icon {
-      width: 36px;
-      height: 48px;
-      border: 2px solid #9aa0a6;
-      border-radius: 2px;
-      position: relative;
-      margin-bottom: 30px;
-    }
-
-    .sad-tab-icon::before {
-      content: '';
-      position: absolute;
-      top: 6px;
-      right: 4px;
-      width: 2px;
-      height: 2px;
-      background: #9aa0a6;
-      box-shadow: -14px 0 #9aa0a6;
-    }
-
-    .sad-tab-icon::after {
-      content: '';
-      position: absolute;
-      top: 14px;
-      left: 7px;
-      width: 14px;
-      height: 6px;
-      border-top: 2px solid #9aa0a6;
-      border-radius: 50% 50% 0 0;
-    }
-
-    h1 {
-      font-size: 22px;
-      font-weight: 500;
-      color: #e8eaed;
-      margin-bottom: 16px;
-    }
-
-    .message {
-      font-size: 15px;
-      color: #9aa0a6;
-      line-height: 1.5;
-      margin-bottom: 16px;
-    }
-
-    .message strong {
-      color: #e8eaed;
-    }
-
-    .try-section {
-      font-size: 15px;
-      color: #9aa0a6;
-      margin-bottom: 24px;
-    }
-
-    .try-section p {
-      margin-bottom: 8px;
-    }
-
-    .try-section ul {
-      list-style-type: disc;
-      padding-left: 20px;
-    }
-
-    .try-section li {
-      margin-bottom: 6px;
-    }
-
-    .try-section a {
-      color: #8ab4f8;
-      text-decoration: none;
-    }
-
-    .try-section a:hover {
-      text-decoration: underline;
-    }
-
-    .error-code {
-      font-size: 12px;
-      color: #9aa0a6;
-      text-transform: uppercase;
-      margin-bottom: 48px;
-    }
-
-    .buttons {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .btn-details {
-      background: transparent;
-      border: 1px solid #5f6368;
-      color: #8ab4f8;
-      padding: 8px 16px;
-      border-radius: 100px;
-      font-size: 13px;
-      cursor: pointer;
-    }
-
-    .btn-details:hover {
-      background: rgba(138, 180, 248, 0.04);
-    }
-
-    .btn-reload {
-      background-color: #8ab4f8;
-      border: none;
-      color: #202124;
-      padding: 8px 20px;
-      border-radius: 100px;
-      font-size: 13px;
-      font-weight: 500;
-      cursor: pointer;
-    }
-
-    .btn-reload:hover {
-      background-color: #9bbbe9;
-    }
-  </style>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>Page Not Found - Caterly Caterers</title>
+    <meta name="description" content="Oops! The page you are looking for doesn’t exist. Explore Caterly Caterers' exceptional services and discover how we make every event unforgettable.">
+    <meta name="robots" content="noindex, follow"> <!-- Prevents indexing of 404 pages -->
+  
+  <!-- Open Graph Protocol -->
+  <meta property="og:title" content="404 - Page Not Found">
+  <meta property="og:description" content="We couldn't find the page you're looking for. Visit Caterly Caterers to learn about our services and offerings.">
+  <meta property="og:image" content="https://www.caterlycaterers.com/images/ogp/ogp.jpeg">
+  <meta property="og:url" content="https://www.caterlycaterers.com/404.html">
+  <meta property="og:type" content="website">
+    <link rel="icon" href="favicon.png" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Gilda+Display&display=swap">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/plugins.css" />
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-
-  <div class="container">
-    <div class="sad-tab-icon"></div>
-    
-    <h1>This site can’t be reached</h1>
-    
-    <div class="message">
-      <strong id="domain-name">example.com</strong>’s server IP address could not be found.
+    <!-- Preloader -->
+    <div class="preloader-bg"></div>
+    <div id="preloader">
+        <div id="preloader-status">
+            <div class="preloader-position loader"> <span>
+                <img src="images/logo.png" alt="">
+            </span> </div>
+        </div>
     </div>
-
-    <div class="try-section">
-      <p>Try:</p>
-      <ul>
-        <li>Checking the connection</li>
-        <li><a href="#">Checking the proxy, firewall, and DNS configuration</a></li>
-        <li><a href="#">Running Connectivity Diagnostics</a></li>
-      </ul>
+    <!-- Progress scroll totop -->
+    <div class="progress-wrap cursor-pointer">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
     </div>
-
-    <div class="error-code">ERR_NAME_NOT_RESOLVED</div>
-
-    <div class="buttons">
-      <button class="btn-details" id="detailsBtn">Details</button>
-      <button class="btn-reload" id="reloadBtn">Reload</button>
+    <!-- Menu -->
+    <div class="cappa-wrap">
+        <div class="cappa-wrap-inner">
+            <nav class="cappa-menu">
+                <ul>
+                    <li><a href='index.html'>Home plate</a></li>
+                    <li><a href="about.html">Bite into our story</a></li>
+                    <li><a href="services.html">Our offerings </a></li>
+                    <li><a href='gallery.html'>Feast your eyes</a></li>
+                    <li><a href='career.html'>Career</a></li>
+                    <li><a href="why-us.html">Our secret sauce</a></li>
+                    <li><a href="contact.html">Let’s connect</a></li>
+                </ul>
+            </nav>
+            <div class="cappa-menu-footer">
+                <div class="reservation">
+                    <a href="tel:+91 95623 95623">
+                        <div class="icon d-flex justify-content-center align-items-center">
+                            <i class="flaticon-call"></i>
+                        </div>
+                        <div class="call">Reservation<br><span>+91 95623 95623</span></div>
+                    </a>
+                </div>
+            </div>
+            <!-- social media -->
+            <div class="social-media">
+                <a href="https://www.instagram.com/caterly.caterers/profilecard/?igsh=MTN2NGloczV5dmlw" class="fa fa-instagram" style="background-color: #125688;"></a>
+                <a href="https://www.facebook.com/" class="fa fa-facebook" style="background-color: #4267B2;"></a>
+                <a href="https://api.whatsapp.com/send/?phone=+919562395623&text=I%27m+interested+to+caterly+caterers&type=phone_number&app_absent=0" class="fa fa-whatsapp" style="background-color: #00d084;"></a>
+                <a href="https://www.youtube.com/" class="fa fa-youtube" style="background-color: #b00101;"></a>
+            </div>
+        </div>
     </div>
-  </div>
-
-  <script>
-    // Extract domain dynamically
-    function getDynamicDomain() {
-      const urlParams = new URLSearchParams(window.location.search);
-      
-      // Option 1: Pass custom domain via URL query parameter (e.g. ?domain=mysite.com)
-      if (urlParams.has('domain')) {
-        return urlParams.get('domain');
-      }
-      
-      // Option 2: Fallback to current website hostname (or default fallback if local)
-      return window.location.hostname || "example.com";
-    }
-
-    // Set dynamic values on page load
-    const currentDomain = getDynamicDomain();
-    document.getElementById('domain-name').textContent = currentDomain;
-    document.getElementById('page-title').textContent = currentDomain;
-
-    // Interactive buttons
-    document.getElementById('reloadBtn').addEventListener('click', () => {
-      window.location.reload();
-    });
-
-    document.getElementById('detailsBtn').addEventListener('click', () => {
-      alert(`Error details for ${currentDomain}: ERR_NAME_NOT_RESOLVED`);
-    });
-  </script>
+    <!-- Logo & Menu Burger -->
+    <header class="cappa-header">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Logo -->
+                <div class="col-6 col-md-6 cappa-logo-wrap">
+                    <a href="index.html" class="cappa-logo"><img src="images/logo.png" alt=""></a>
+                </div>
+                <!-- Menu Burger -->
+                <div class="col-6 col-md-6 text-right cappa-wrap-burger-wrap"> <a href="#" class="cappa-nav-toggle cappa-js-cappa-nav-toggle"><i></i></a> </div>
+            </div>
+        </div>
+    </header>
+    <!-- 404 Page -->
+        <section class="comming section-padding">
+            <div class="v-middle">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <h2 style="font-size: 90px;">404</h2>
+                            <h2>Page Not Found</h2>
+                        </div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col-md-6 offset-md-3 text-center">
+                            <p>The page you are looking for was moved, removed, renamed or never existed.</p>
+                            <div class="butn-light mt-30 mb-30"> <a href="index.html" ><span>BACK TO HOMEPAGE</span></a> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- jQuery -->
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/jquery-migrate-3.0.0.min.js"></script>
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/jquery.isotope.v3.0.2.js"></script>
+    <script src="js/pace.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scrollIt.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.magnific-popup.js"></script>
+    <script src="js/YouTubePopUp.js"></script>
+    <script src="js/select2.js"></script>
+    <script src="js/datepicker.js"></script>
+    <script src="js/smooth-scroll.min.js"></script>
+    <script src="js/custom.js"></script>
 </body>
 </html>
